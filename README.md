@@ -6,7 +6,7 @@
 > results/: contains all generated results.
 
 ## Usage
-1. Enter in root directory of repository. <br>
+1. Enter in src/ directory of repository. <br>
 2. Run script. <br>
     ```
     python3 app.py
