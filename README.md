@@ -2,6 +2,7 @@
 
 ## Directory Structure
 > data/: contains query.txt, METIS's graph file, similarity matrix data etc.
+
 > results/: contains all generated results.
 
 ## Usage
