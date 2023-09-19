@@ -1,0 +1,18 @@
+PREFIX clarify: <http://research.tib.eu/clarify2020/vocab/>
+PREFIX clarifyE: <http://research.tib.eu/clarify2020/entity/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+select distinct ?entity where 
+ {?entity a  clarify:LCPatient . 
+  ?entity clarify:hasFamilyHistory ?family .
+  ?family clarify:familyType ?familyName .
+?family clarify:hasFamilyCancerType ?cancerFamily .
+?entity clarify:hasDiagnosis ?date .
+?date clarify:hasDiagnosisStage ?Stages. 
+  ?entity  clarify:hasSmokingHabit ?smokingHabits . 
+  ?entity  clarify:age ?Age.
+ ?entity clarify:hasBio ?bio .
+ ?entity clarify:sex ?gender.
+?entity clarify:hasProgressionRelapseAssessment ?rp.
+?rp clarify:hasProgressionOrRelapse ?relapseprogression.
+ } limit 300

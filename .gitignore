@@ -1,0 +1,5 @@
+docker-config/
+docker-compose.yaml
+local/
+src/__pycache__
+*.tsv
